@@ -1,35 +1,71 @@
-body {
-  font-family: Verdana, Geneva, sans-serif;
-}
+/* Body */
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+  }
 
-nav ul {
-  background-color: LightSkyBlue;
-  list-style-type: none;
-  padding: 0;
-  width: 200px;
-  height: 700px;
-  border: 1px solid MediumTurqoise;
-}
+/* Head */
+  h1{
+    background-color: white;
+  }
 
-nav ul li {
-  border-bottom: 1px solid MediumTurqoise;
-  padding:5px;
-}
+/* Student tabs */
+  nav ul {
+    /* background-color: LightSkyBlue; */
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    height: 700px;
+    border: 1px solid MediumTurqoise;
+  }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
+  nav ul li {
+    border-bottom: 1px solid MediumTurqoise;
+    padding:5px;
+  }
 
-nav ul li a:hover {
-  color: #9cefff;
-}
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
 
-div.Messages {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 300px;
-    height: 23px;
-    background-color: whitesmoke;
-}
+  nav ul li a:hover {
+    color: #9cefff;
+  }
+
+/* Messages */
+  div.Messages {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 300px;
+      height: 23px;
+      background-color: #ffe6ff;
+  }
+
+/*COLUMNS - from W3Schools:*/
+  .column1 {
+     float: left;
+     width: 15%;
+     padding: 10px;
+     height: 800px;
+  }
+  .column2 {
+     float: left;
+     color: #7E9FDD;
+     width: 25%;
+     padding: 10px;
+     height: 800px;
+  }
+  .column3 {
+     float: right;
+     background-color: #7E9FDD;
+     width: 25%;
+     height: 800px;
+     padding: 10px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+     content: "";
+     display: table;
+     clear: both;
+  }
