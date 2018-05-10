@@ -40,13 +40,14 @@ div.Messages {
     background-color: #7E9FDD;
 }
 
-/*---------------Menu Bar---------------*/
-.menubar{
-
+/*---------------NavBar---------------*/
+.navbar navbar-inverse navbar-fixed-top{
+  background-color: #7E9FDD;
 }
 
+
 div.menubar ul li a {
-  float: right;
+  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -55,19 +56,18 @@ div.menubar ul li a {
 }
 
 div.menubar ul li {
-  float: left;
 }
 
 div.menubar ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0px 16px;
   overflow: hidden;
   background-color: #7E9FDD;
 }
 
 .versions{
-  float: left;
+  /* float: right; */
   width: 80%;
 }
 
@@ -78,10 +78,9 @@ div.menubar ul {
 .column2,
 .column3 {
   color: #7E9FDD;
-  height: 645px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+  /* height: 745px; */
+  height: 1200px;
+  padding-left: 30px;
   overflow: auto;
   box-sizing: border-box;
 }
@@ -95,14 +94,16 @@ div.menubar ul {
 .column2 {
    float: left;
    width: 65%;
-   padding: 40px;
-
+   padding: 0px;
 }
 .column3 {
    float: right;
    width: 20%;
-   padding: 10px;
-   background-color: #F7F7F7;
+   padding: 0px;
+   border-left-style: solid;
+   border-width: 1px;
+   border-color: #E0E0E0;
+   /* background-color: #F7F7F7; */
 }
 /* Clear floats after the columns */
 .row:after {

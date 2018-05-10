@@ -4,68 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   <title>ShakesPeer</title>
 </head>
 
 <body>
-<!-- <h1>ShakesPeer</h1> -->
-
-<div class="menubar">
-  <div class="topmenu">
-    <ul>
-      <li><a class = "active" href="#notifications"><img src="bell.png" width=28px</a></li>
-      <li><a href="#settings"><img src="settings.png" width=30px</a></li>
+  <!--- NavBar ----------------->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <style>
+    nav{
+      height: 60px;
+    }
+  </style>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ShakesPeer</a>
+    </div>
+    <ul class="nav navbar-nav" style="float:right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
     </ul>
   </div>
+</nav>
 
-  <!-- <div class="versions">
-    <ul>
-      <li><a class = "active" href="#notifications"><img src="bell.png" width=28px</a></li>
-      <li><a href="#settings"><img src="settings.png" width=30px</a></li>
-    </ul>
-  </div> -->
-
+<!-- empty spacing bar -->
+<div class="spacebar" style="height:60px">
 </div>
 
+<!-- Columns -->
+<div class="row">
+  <div class="column1" style="background-color:#ddd;">
 
-  <!-- Columns -->
-  <div class="row">
-    <div class="column1" style="background-color:#ddd;">
-
-      <p>
-        <!-- Vertical Menu Bar -->
-          <nav>
-            <ul>
-              <li>
-                <a href="A.html">Task Question</a>
-              </li>
-              <li>
-                <a href="B.html">My Solution</a>
-              </li>
-              <li>
-                <a href="C.html">Dima</a>
-              </li>
-              <li>
-                <a href="D.html">Kevin</a>
-              </li>
-              <li>
-                <a href="C.html">Jodie</a>
-              </li>
-              <li>
-                <a href="C.html">Josh</a>
-              </li>
-              <li>
-                <a href="C.html">Shen</a>
-              </li>
-              <li>
-                <a href="C.html">Shenma</a>
-              </li>
-            </ul>
-          </nav>
-      </p>
-    </div>
-    <div class="column2" >
-      <h2>Solution</h2>
+    <p>
+      <!-- Vertical Menu Bar -->
+        <nav>
+          <ul>
+            <li>
+              <a href="A.html">Task Question</a>
+            </li>
+            <li>
+              <a href="B.html">My Solution</a>
+            </li>
+            <li>
+              <a href="C.html">Dima</a>
+            </li>
+            <li>
+              <a href="D.html">Kevin</a>
+            </li>
+            <li>
+              <a href="C.html">Jodie</a>
+            </li>
+            <li>
+              <a href="C.html">Josh</a>
+            </li>
+            <li>
+              <a href="C.html">Shen</a>
+            </li>
+            <li>
+              <a href="C.html">Shenma</a>
+            </li>
+          </ul>
+        </nav>
+    </p>
+  </div>
+  <div class="column2" >
+    <!-- Notification bar -->
+    <!-- <div class="menubar">
+      <ul>
+        <li><a class = "active" href="#versions">Versions</a></li>
+        <li><a href="#edit">Edit</a></li>
+      </ul>
+    </div> -->
+    <h2>Solution</h2>
+    <div>
       <p>
         In 1981 Herbs released their first EP ‘What’s be Happen?’ which was a response and a protest to many political events that happened in New Zealand in the 70s and early 80s. The most notable and influential events include the occupation of Bastion Point, the dawn raids of suspected over stayers, and the protests of the 1981 Springbok tour. In the album, they focus on issues of racism and discrimination as these were the controversial topics that were increasingly relevant at that time.
       </p>
@@ -85,11 +100,20 @@
         The Herbs album uses political terminology and directly referenced lyrics to describe the issues going on in both New Zealand and internationally. The use of voices and instruments in their songs give a sense of unity between oppressed groups, whether by race or otherwise. The message that the band sends with the album is to always fight for your rights and don’t be held down by those in power.
       </p>
     </div>
-    <div class="column3">
-      <h2>Comments</h2>
-      <p>comment comment comment</p>
-    </div>
   </div>
+  <div class="column3">
+    <!-- Notification bar -->
+    <!-- <div class="menubar">
+      <ul>
+        <li><a class = "active" href="#notifications"><img src="bell.png" width=28px</a></li>
+        <li><a href="#settings"><img src="settings.png" width=30px</a></li>
+        <li><a href="#help"><img src="help.png" width=30px</a></li>
+      </ul>
+    </div> -->
+    <h2>Comments</h2>
+    <p>comment comment comment</p>
+  </div>
+</div>
 
 
   <!-- Messages -->
