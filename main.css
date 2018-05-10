@@ -44,24 +44,21 @@ div.Messages {
 .navbar{
   background-color: #333;
   height: 50px;
-  border-radius: 6px;
-  clear: both;
+  position: sticky;
+  top: 0;
+  /* clear: both; */
   /* *zoom: 1; */
 }
-
-.navbar:before,
-.navbar:after {
+.clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-
-.navbar:after {
+.clearfix:after {
   clear: both;
 }
-
 .navbar,
-navbar-header,
-navbar-menu,{
+.navbar-header,
+.navbar-menu,{
   margin: 0 1.5% 24px 1.5%;
 }
 .navbar-header{
@@ -74,8 +71,11 @@ navbar-menu,{
 }
 .navbar-brand{
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+
 }
 .navbar-menu ul li a{
   display: block;
@@ -85,16 +85,19 @@ navbar-menu,{
   text-decoration: none;
 }
 .navbar-menu ul li a:hover{
-  background-color: #111;
+  background-color: yellow;
 }
 .navbar-menu ul li{
   float: left;
 }
 .navbar-menu ul{
+  /* this is the one thats the wrong size */
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
+  /* width: 100px; */
+  height: 30px;
   background-color: #333;
 }
 /*---------------COLUMNS---------------*/
