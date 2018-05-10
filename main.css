@@ -36,7 +36,7 @@ body {
 }
 
 .column1 nav ul li a:hover {
-  color: #9cefff;
+  color: #8069C3;
 }
 
 /*---------------Messages---------------*/
@@ -46,7 +46,10 @@ div.Messages {
     left: 0;
     width: 300px;
     height: 23px;
-    background-color: #7E9FDD;
+    background-color: #F7F7F7;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E0E0E0;
 }
 
 /*---------------SpaceBar---------------*/
@@ -56,7 +59,8 @@ div.Messages {
 
 /*---------------NavBar---------------*/
 .navbar{
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: #32245B;
   height: 50px;
   /* position: sticky; */
   top: 0;
@@ -111,8 +115,7 @@ div.Messages {
 .column1,
 .column2,
 .column3 {
-  color: #7E9FDD;
-  /* height: 745px; */
+  color: #8069C3;
   height: 775px;
   padding: 20px 40px;
   overflow: auto;
@@ -122,7 +125,7 @@ div.Messages {
    float: left;
    width: 15%;
    padding-left: 20px;
-   background-color: #E0E0E0;
+   background-color: #B2A4DB;
 }
 .column2 {
    float: left;
@@ -148,3 +151,5 @@ div.Messages {
 .input-group{
   width: 250px;
 }
+
+/*---------------Text Edit---------------*/
