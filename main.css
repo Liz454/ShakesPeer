@@ -30,12 +30,10 @@ body {
 .column1 nav ul li {
   border-bottom: 1px solid MediumTurqoise;
   padding: 15px;
-  /* border-style: solid; */
-  /* border-color: black; */
 }
 
 .column1 nav ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -44,8 +42,8 @@ body {
 }
 
 .column1 .active{
-  background-color: #E0E0E0;
-  /* color: #8069C3; */
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 /*---------------Messages---------------*/
@@ -68,13 +66,9 @@ div.Messages {
 
 /*---------------NavBar---------------*/
 .navbar{
-  /* background-color: #333; */
   background-color: #32245B;
   height: 50px;
-  /* position: sticky; */
   top: 0;
-  /* clear: both; */
-  /* *zoom: 1; */
 }
 .navbar,
 .navbar-header,
@@ -137,8 +131,7 @@ div.Messages {
    background-color: #B2A4DB;
    border-right-style: solid;
    border-width: 1px;
-   border-color: #E0E0E0;
-   /* border-color: white; */
+   border-color: white;
 }
 .column2 {
    float: left;
@@ -166,6 +159,12 @@ div.Messages {
   width: 258px;
   /* position:absolute; */
   bottom: 5px;
+}
+.column3 .container{
+  background-color: white;
+  border-color: #E0E0E0;
+  height: 650px;
+  /* width: 300px; */
 }
 
 /*---------------Text Edit---------------*/
