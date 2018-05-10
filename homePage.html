@@ -31,24 +31,44 @@
 
 <!-- Columns -->
 <div class="row">
-  <div class="column1 container">
+  <div class="column1 ">
     <!-- Vertical Menu Bar -->
-    <nav>
-      <ul class="nav nav-tabs">
-        <li><a data-toggle="tab" href="#">Task Question</a></li>
-        <li class="active"><a data-toggle="tab" href="#">My Solution</a></li>
-        <li><a data-toggle="tab" href="#">Dima</a></li>
-        <li><a data-toggle="tab" href="#">Kevin</a></li>
-        <li><a data-toggle="tab" href="#">Jodie</a></li>
-        <li><a data-toggle="tab" href="#">Josh</a></li>
-        <li><a data-toggle="tab" href="#">Shen</a></li>
-        <li><a data-toggle="tab" href="#">Shenma</a></li>
+    <nav class="nav flex-column">
+      <ul>
+        <li><a class="nav-link" href="#">Task Question</a></li>
+        <li class="nav-link active"><a data-toggle="tab" href="#">My Solution</a></li>
+        <li><a class="nav-link" href="#">Dima</a></li>
+        <li><a class="nav-link" href="#">Kevin</a></li>
+        <li><a class="nav-link" href="#">Jodie</a></li>
+        <li><a class="nav-link" href="#">Josh</a></li>
+        <li><a class="nav-link" href="#">Shen</a></li>
+        <li><a class="nav-link" href="#">Shenma</a></li>
       </ul>
     </nav>
   </div>
 
   <div class="column2" >
+    <br>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li><a data-toggle="tab" href="#">Version 1</a></li>
+        <li><a data-toggle="tab" href="#">Version 2</a></li>
+        <li><a data-toggle="tab" href="#">Version 3</a></li>
+        <li class="active"><a data-toggle="tab" href="#">Current Edit</a></li>
+
+      </ul>
+
+    </div>
     <h2>Solution and Justification</h2>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Task Question
+    </button>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question?
+      </div>
+    </div>
+    <p><br></p>
     <form>
       <div class="form-group">
         <label for="comment">Solution:</label>
@@ -59,11 +79,15 @@
         <textarea class="form-control" rows="5" id="comment"></textarea>
       </div>
     </form>
+    <div class="btn-container">
+      <button type="button" class="btn btn-primary btn-lg">Publish</button>
+      <button type="button" class="btn btn-secondary btn-lg">Discard</button>
+    </div>
+
   </div>
 
   <div class="column3">
     <h2>Comments</h2>
-    <p>comment comment comment</p>
     <div class="row">
       <div class="col-lg-6">
         <div class="input-group">
