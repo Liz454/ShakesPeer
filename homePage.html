@@ -49,39 +49,60 @@
 
   <div class="column2" >
     <br>
+    <!-- Tabs -->
     <div class="container">
       <ul class="nav nav-tabs">
-        <li><a data-toggle="tab" href="#">Version 1</a></li>
-        <li><a data-toggle="tab" href="#">Version 2</a></li>
-        <li><a data-toggle="tab" href="#">Version 3</a></li>
-        <li class="active"><a data-toggle="tab" href="#">Current Edit</a></li>
-
+        <li><a data-toggle="tab" href="#v1">Version 1</a></li>
+        <li><a data-toggle="tab" href="#v2">Version 2</a></li>
+        <li><a data-toggle="tab" href="#v3">Version 3</a></li>
+        <li class="active"><a data-toggle="tab" href="#edit">Current Edit</a></li>
       </ul>
-
     </div>
-    <h2>Solution and Justification</h2>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-      Task Question
-    </button>
-    <div class="collapse" id="collapseExample">
-      <div class="card card-body">
-        Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question?
+    <!-- Tab content -->
+    <div class="tab-content">
+      <div id="edit" class="tab-pane fade in active">
+        <!-- Text input -->
+        <h2>Solution and Justification</h2>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Task Question
+        </button>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question Task Question?
+          </div>
+        </div>
+        <p><br></p>
+        <form>
+          <div class="form-group">
+            <label for="comment">Solution:</label>
+            <textarea class="form-control" rows="10" id="comment"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="comment">Justification:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+        </form>
+        <!-- Publish and Discard buttons -->
+        <div class="btn-container">
+          <button type="button" class="btn btn-primary btn-lg">Publish</button>
+          <button type="button" class="btn btn-secondary btn-lg">Discard</button>
+        </div>
       </div>
-    </div>
-    <p><br></p>
-    <form>
-      <div class="form-group">
-        <label for="comment">Solution:</label>
-        <textarea class="form-control" rows="10" id="comment"></textarea>
+      <div id="v1" class="tab-pane fade">
+        <h3>Solution</h3>
+        <p>My first paragraph.</p>
       </div>
-      <div class="form-group">
-        <label for="comment">Justification:</label>
-        <textarea class="form-control" rows="5" id="comment"></textarea>
+      <div id="v2" class="tab-pane fade">
+        <h3>Solution</h3>
+        <p>My first paragraph.</p>
+        <p>Also a second paragraph.</p>
       </div>
-    </form>
-    <div class="btn-container">
-      <button type="button" class="btn btn-primary btn-lg">Publish</button>
-      <button type="button" class="btn btn-secondary btn-lg">Discard</button>
+      <div id="v3" class="tab-pane fade">
+        <h3>Solution</h3>
+        <p>My first paragraph.</p>
+        <p>Also a second paragraph.</p>
+        <p>Wow a third paragraph.</p>
+      </div>
     </div>
 
   </div>
