@@ -1,3 +1,12 @@
+/*---------------Clearfix---------------*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 /*---------------Body---------------*/
 body {
   font-family: Verdana, Geneva, sans-serif;
@@ -40,21 +49,19 @@ div.Messages {
     background-color: #7E9FDD;
 }
 
+/*---------------SpaceBar---------------*/
+.spacebar{
+  height: 30px;
+}
+
 /*---------------NavBar---------------*/
 .navbar{
   background-color: #333;
   height: 50px;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   /* clear: both; */
   /* *zoom: 1; */
-}
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
 }
 .navbar,
 .navbar-header,
@@ -75,7 +82,6 @@ div.Messages {
   text-decoration: none;
   padding: 10px;
   box-sizing: border-box;
-
 }
 .navbar-menu ul li a{
   display: block;
@@ -107,15 +113,15 @@ div.Messages {
 .column3 {
   color: #7E9FDD;
   /* height: 745px; */
-  height: 1200px;
-  padding: 10px 30px;
+  height: 775px;
+  padding: 20px 40px;
   overflow: auto;
   box-sizing: border-box;
 }
 .column1 {
    float: left;
    width: 15%;
-   padding-left: 5px;
+   padding-left: 20px;
    background-color: #E0E0E0;
 }
 .column2 {
@@ -129,10 +135,16 @@ div.Messages {
    border-width: 1px;
    border-color: #E0E0E0;
    background-color: #F7F7F7;
+   padding: 10px;
 }
 /* Clear floats after the columns */
 .row:after {
    content: "";
    display: table;
    clear: both;
+}
+
+/*---------------Comments---------------*/
+.input-group{
+  width: 250px;
 }

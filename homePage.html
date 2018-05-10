@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="main.css">
   <title>ShakesPeer</title>
 </head>
 
 <body>
   <!--- NavBar ----------------->
-<nav class="navbar clearfix">
+<nav class="navbar clearfix navbar-fixed-top">
   <div class="navbar-header container navbar">
     <a class="navbar-brand" href="#">ShakesPeer</a>
   </div>
-  <div class="navbar-menu clearfix">
-    <ul>
-      <!-- <li class="active"><a href="#">Home</a></li> -->
+  <!-- <div class="navbar-menu clearfix ">
+    <ul class= "clearfix">
       <li><a href="#bell"><img src="bell.png" width=28px</a></li>
       <li><a href="#set"><img src="settings.png" width=30px</a></li>
       <li><a href="#help"><img src="help.png" width=30px</a></li>
     </ul>
-  </div>
+  </div> -->
 </nav>
+
+<!-- spacebar -->
+<div class="spacebar">
+</div>
 
 <!-- Columns -->
 <div class="row">
@@ -59,8 +65,19 @@
         </nav>
     </p>
   </div>
+
   <div class="column2" >
-    <h2>Solution</h2>
+    <h2>Solution and Justification</h2>
+    <form>
+      <div class="form-group">
+        <label for="comment">Solution:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="comment">Justification:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+    </form>
     <div>
       <p>
         In 1981 Herbs released their first EP ‘What’s be Happen?’ which was a response and a protest to many political events that happened in New Zealand in the 70s and early 80s. The most notable and influential events include the occupation of Bastion Point, the dawn raids of suspected over stayers, and the protests of the 1981 Springbok tour. In the album, they focus on issues of racism and discrimination as these were the controversial topics that were increasingly relevant at that time.
@@ -82,9 +99,20 @@
       </p>
     </div>
   </div>
+
   <div class="column3">
     <h2>Comments</h2>
     <p>comment comment comment</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Feedback">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Send</button>
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
   </div>
 </div>
 
