@@ -61,13 +61,13 @@ div.Messages {
 
 /*---------------SpaceBar---------------*/
 .spacebar{
-  height: 30px;
+  height: 67px;
 }
 
 /*---------------NavBar---------------*/
 .navbar{
   background-color: #32245B;
-  height: 50px;
+  /* height: 50px; */
   top: 0;
 }
 .navbar,
@@ -163,8 +163,8 @@ div.Messages {
 .column3 .container{
   background-color: white;
   border-color: #E0E0E0;
-  height: 650px;
-  /* width: 300px; */
+  height: 700px;
+  width: 350px;
 }
 
 /*---------------Text Edit---------------*/
