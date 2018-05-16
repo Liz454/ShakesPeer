@@ -139,14 +139,20 @@ div.Messages {
 }
 
 /*---------------Comments---------------*/
-.post{
-  width: 150%;
+.comment-section{
+  padding: 10px 0px;
+  height: 650px;
+  /* background-color: pink; */
 }
-
+.comment{
+  width: 150%;
+  padding: 0px 5px;
+}
+.comment .h5{
+  color: gray;
+}
 .input-group{
-  /* width: 258px; */
   width: 105%;
-  /* position:absolute; */
   right: 10px;
 }
 .column3 .container{
