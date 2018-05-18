@@ -31,7 +31,8 @@
 
 /*---------------Body---------------*/
 body {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Assistant';
+  font-size: 16px;
 }
 
 /*---------------Student tabs---------------*/
@@ -85,7 +86,7 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 200px;
+    width: 210px;
     height: 35px;
     padding: 5px;
     background-color: #F7F7F7;
@@ -96,8 +97,12 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     color: black;
     font-size: 16px;
+    text-align: left;
 }
-
+.panel .panel-heading{
+  background-color: var(--color1);
+  color: white;
+}
 #messageButton:active:focus{
   outline: 0;
 }
@@ -148,6 +153,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 .navbar-brand{
+  font-family: 'barrio';
   color: white;
   font-size: 30px;
   text-decoration: none;
@@ -192,6 +198,7 @@ body {
 .column1 {
    float: left;
    width: 15%;
+   /* height: 100vh; */
    padding-left: 20px;
    /* background-color: #F7F7F7; */
    border-right-style: solid;
@@ -241,6 +248,9 @@ body {
   border-color: #E0E0E0;
   height: 660px;
   width: 350px;
+}
+.column3 .panel-footer{
+  background-color: var(--colorbg);
 }
 
 /*---------------Text Edit---------------*/
