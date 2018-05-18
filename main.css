@@ -1,31 +1,25 @@
 /*---------------Colour---------------*/
 :root {
-
-    /* --color1:#3AAFA9;
-    --color2:#2B7A78;
-    --colorbg: #F7F7F7; */
-
-
-    /* --color1: #94618E;
-    --color2: #49274A;
-    --colorbg: #F7F7F7; */
-
-    /* --color1: #57bc90;
-    --color2: #015249;
-    --colorbg: #F7F7F7; */
-
-    --color1: #7cdbd5;
-    --color2: #02c8a7;
-    --colorbg: #F7F7F7;
+  --color1: #57bc90;
+  --color2: #018374;
+  --color3: #015147;
+  --colorbg: #F7F7F7;
 }
+
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited,
-.btn-primary:focus {
+.btn-primary:focus{
     background-color: var(--color2);
     border-color: #8064A2;
+    outline: 0;
 }
+.btn-primary:active:focus{
+  background-color: var(--color3);
+  outline: 0;
+}
+
 /*---------------Clearfix---------------*/
 .clearfix:before, .clearfix:after {
   content: "";
@@ -39,9 +33,6 @@
 body {
   font-family: Verdana, Geneva, sans-serif;
 }
-
-/*---------------Head---------------*/
-
 
 /*---------------Student tabs---------------*/
 
@@ -59,17 +50,17 @@ body {
 } */
 
 .column1 nav ul li a {
-  color: black;
+  color: var(--color3);
   text-decoration: none;
 }
 
 .column1 nav ul li:hover {
-  /* background-color: #E0E0E0; */
+  color: var(--color3);
 }
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover {
-  color: black;
+  color: var(--color1);
   background-color: white;
 }
 .nav-pills .active{
@@ -102,6 +93,9 @@ body {
 }
 .message .panel-footer{
   padding: 0;
+}
+.badge{
+  background-color: var(--color3);
 }
 /*---------------SpaceBar---------------*/
 .spacebar{

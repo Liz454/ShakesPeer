@@ -21,42 +21,21 @@
     </div>
     <div class="navbar-right navbar-btn">
       <!-- glyphicons.com -->
-      <!-- button 1 -->
-      <button type="button" class="btn navbar-btn"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></button>
-      <!-- button 2 -->
+      <!-- button 1: notifications -->
+      <a href="#" type="button" class="btn navbar-btn" title="Notifications" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Kevin gave feedback on your solution"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+
+      <!-- button 2: settings-->
       <button type="button" class="btn navbar-btn"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button>
-      <!-- button 3 -->
+      <!-- button 3: help -->
       <button type="button" class="btn navbar-btn"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></button>
 
-      <!-- notifications -->
-      <!-- <li class="nav-item dropdown">
-        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i <span class="glyphicon glyphicon-cog" aria-hidden="true"></i>
-        </a>
-          <ul class="dropdown-menu">
-            <li class="head text-light bg-dark">
-              <div class="row">
-                <div class="col-lg-12 col-sm-12 col-12">
-                  <span>Notifications (3)</span>
-                  <a href="" class="float-right text-light">Mark all as read</a>
-                </div>
-            </li>
-            <li class="notification-box">
-              <div class="row">
-                <div class="col-lg-3 col-sm-3 col-3 text-center">
-                </div>
-                <div class="col-lg-8 col-sm-8 col-8">
-                  <strong class="text-info">David John</strong>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetur
-                  </div>
-                </div>
-              </div>
-            </li>
 
-          </ul>
-      </li> -->
-      <!-- end notifications -->
+
+      <script>
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+      });
+      </script>
     </div>
   </div>
 </nav>
