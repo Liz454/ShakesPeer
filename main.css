@@ -1,7 +1,22 @@
 /*---------------Colour---------------*/
 :root {
-    --color1:#3AAFA9;
+
+    /* --color1:#3AAFA9;
     --color2:#2B7A78;
+    --colorbg: #F7F7F7; */
+
+
+    /* --color1: #94618E;
+    --color2: #49274A;
+    --colorbg: #F7F7F7; */
+
+    /* --color1: #57bc90;
+    --color2: #015249;
+    --colorbg: #F7F7F7; */
+
+    --color1: #7cdbd5;
+    --color2: #02c8a7;
+    --colorbg: #F7F7F7;
 }
 .btn-primary,
 .btn-primary:hover,
@@ -90,7 +105,6 @@ body {
 }
 /*---------------SpaceBar---------------*/
 .spacebar{
-  /* height: 67px; */
   height: 60px;
 }
 
@@ -106,6 +120,9 @@ body {
   text-decoration: none;
   padding: 20px;
   box-sizing: border-box;
+}
+.navbar-brand:active{
+  color: white;
 }
 .navbar-brand:hover{
   color: var(--color2);
@@ -143,17 +160,15 @@ body {
    float: left;
    width: 15%;
    padding-left: 20px;
-   background-color: #F7F7F7;
+   /* background-color: #F7F7F7; */
    border-right-style: solid;
    border-width: 1px;
    border-color: #E0E0E0;
+   background-color: var(--colorbg);
 }
 .column2 {
    float: left;
    width: 60%;
-
-   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
-   /* background-color: #F7F7F7; */
 }
 .column3 {
    float: right;
@@ -161,8 +176,9 @@ body {
    border-left-style: solid;
    border-width: 1px;
    border-color: #E0E0E0;
-   background-color: #F7F7F7;
+   /* background-color: #F7F7F7; */
    padding: 10px;
+   background-color: var(--colorbg);
 }
 
 /*---------------Comments---------------*/
@@ -181,8 +197,8 @@ body {
 .comment .h5{
   color: silver;
 }
-.comment .h5 .title{
-  color: black;
+.comment .meta .h5 a{
+  color: var(--color2);
 }
 .input-group{
   width: 105%;
