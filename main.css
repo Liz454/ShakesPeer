@@ -5,21 +5,19 @@
   --color3: #015147;
   --colorbg: #F7F7F7;
 }
-
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus{
-    background-color: var(--color2);
-    border-color: #8064A2;
-    outline: 0;
+  background-color: var(--color2);
+  outline: 0;
+  border-style: none;
 }
 .btn-primary:active:focus{
   background-color: var(--color3);
   outline: 0;
 }
-
 /*---------------Clearfix---------------*/
 .clearfix:before, .clearfix:after {
   content: "";
@@ -28,34 +26,20 @@
 .clearfix:after {
   clear: both;
 }
-
 /*---------------Body---------------*/
 body {
   font-family: 'Assistant';
   font-size: 16px;
 }
-
 /*---------------Student tabs---------------*/
-
 .column1 nav ul {
   list-style-type: none;
   padding: 0;
   width: 200px;
   height: 700px;
 }
-
-/* .column1 nav ul li {
-  border-bottom: 1px solid;
-  border-color: #E0E0E0;;
-  padding: 15px;
-} */
-
 .column1 nav ul li a {
   color: black;
-}
-
-.column1 nav ul li:hover {
-  /* color: var(--color3); */
 }
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:focus,
@@ -66,9 +50,7 @@ body {
 .nav-pills .active{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
-
 /*---------------Messages---------------*/
-
 #messageButton {
     position: fixed;
     bottom: 0;
@@ -125,14 +107,10 @@ body {
 .message .panel-footer{
   padding: 0;
 }
-.badge{
-  /* background-color: var(--color3); */
-}
 /*---------------SpaceBar---------------*/
 .spacebar{
   height: 60px;
 }
-
 /*---------------NavBar---------------*/
 .navbar{
   background-color: var(--color1);
@@ -156,7 +134,6 @@ body {
 .navbar-btn{
   font-size: 20px;
   padding-right: 25px;
-  /* background-color: pink; */
 }
 .navbar-btn .btn{
   padding: 0px 20px;
@@ -171,9 +148,7 @@ body {
   font-size: 12px;
   top: 0px;
 }
-
 /*---------------COLUMNS---------------*/
-
 .column1,
 .column2,
 .column3 {
@@ -185,9 +160,7 @@ body {
 .column1 {
    float: left;
    width: 15%;
-   /* height: 100vh; */
    padding-left: 20px;
-   /* background-color: #F7F7F7; */
    border-right-style: solid;
    border-width: 1px;
    border-color: #E0E0E0;
@@ -203,16 +176,13 @@ body {
    border-left-style: solid;
    border-width: 1px;
    border-color: #E0E0E0;
-   /* background-color: #F7F7F7; */
    padding: 10px;
    background-color: var(--colorbg);
 }
-
 /*---------------Comments---------------*/
 .comment-section{
   padding: 10px 0px;
   height: 650px;
-  /* background-color: pink; */
 }
 .post-description{
   width: 200px;
@@ -239,18 +209,7 @@ body {
 .column3 .panel-footer{
   background-color: var(--colorbg);
 }
-
-/*---------------Text Edit---------------*/
-.btn-primary{
-  border-style: none;
-  padding-left: 10px
-}
-
 /*---------------Version tabs---------------*/
-.nav-tabs > li.active > a {
-  /* color: pink; */
-
-}
 .nav-tabs > li > a {
   color: var(--color2);
 }
