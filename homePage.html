@@ -29,8 +29,6 @@
       <!-- button 3: help -->
       <button type="button" class="btn navbar-btn"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></button>
 
-
-
       <script>
       $(document).ready(function(){
           $('[data-toggle="popover"]').popover();
@@ -209,47 +207,54 @@
 </div>
 <!-- Messages -->
 <div class="Messages">
-  <p>Messages <span class="badge">2</span></p>
+  <!-- <p>Messages <span class="badge">2</span></p> -->
+  <button id="messageButton" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#messageModal">Messages</button>
 </div>
 
 <!-- Source: https://bootsnipp.com/snippets/40W9n -->
-<!-- <div class="message container">
+<div class="message container modal" id="messageModal">
     <div class="row">
         <div class="panel panel-default">
           <div class="panel-heading">Messages <span class="badge">2</span></div>
+
           <div class="panel-body">
             <div class="container">
 
-                <div class="row message-bubble">
-                <p class="text-muted">Dima</p>
-                    <span>Hello</span>
-                </div>
-                <div class="row message-bubble">
-                    <p class="text-muted">Shen</p>
-                    <p>Hola</p>
-                </div>
-                <div class="row message-bubble">
-                <p class="text-muted">Dima</p>
-                    <p>Have you finished your assignment?</p>
-                </div>
-                <div class="row message-bubble">
-                <p class="text-muted">Shen</p>
-                    <p>What assignment?</p>
-                </div>
-            </div>
+              <div class="row message-bubble D">
+              <p class="text-muted">Dima</p>
+                <p>Hello</p>
+              </div>
 
-            <div class="panel-footer">
-                 <div class="input-group">
-                  <input type="text" class="form-control">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Send</button>
-                  </span>
-                </div>
+              <div class="row message-bubble S">
+                  <p class="text-muted">Shen</p>
+                  <p>Hi</p>
+              </div>
+
+              <div class="row message-bubble D">
+              <p class="text-muted">Dima</p>
+                  <p>Have you finished your assignment?</p>
+              </div>
+
+              <div class="row message-bubble S">
+              <p class="text-muted">Shen</p>
+                  <p>What assignment?</p>
+              </div>
+
+              <div class="panel-footer">
+                   <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Send</button>
+                    </span>
+                  </div>
+              </div>
+
             </div>
           </div>
         </div>
     </div>
-</div>  -->
+</div>
+
 <!-- End source -->
 
 
